@@ -1,4 +1,5 @@
-angular.module('demo', ['ngRoute']);
+angular.module('SPHSRobotics', ['ngRoute']);
+
 var header = document.getElementById("fixed-header");
 window.addEventListener('scroll', function(){
     if(window.scrollY > 450){

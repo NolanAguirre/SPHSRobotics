@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="css/main.css" />
     </head>
-    <body class="view" ng-view>
+    <body class="view">
         <div id="fixed-header">
             <div onclick="window.scrollTo(0,2946)">hi</div>
             <div onclick="window.scrollTo(0,2373)">hi</div>
@@ -15,31 +15,10 @@
             <div onclick="window.scrollTo(0,578)">lets fite</div>
             <div onclick="window.scrollTo(0,0)">sup</div>
         </div>
-        <div class="header"></div>
-        <div class="body">
-            <div class="intro subset">
-                <div class="border"></div>
-            </div>
-            <div class="design subset">
-                <div class="border"></div>
-            </div>
-            <div class="building subset">
-                <div class="border"></div>
-            </div>
-            <div class="programming subset">
-                <div class="border"></div>
-            </div>
-            <div class="website subset">
-                <div class="border"></div>
-            </div>
-            <div class="notebook subset">
-                <div class="border"></div>
-            </div>
-        </div>
-        <div class="footer">
-            <div><a href="https://github.com/NolanAguirre">Made with love by Nolan Aguirre</a></div>
-        </div>
+        <div ng-view> </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/router.js"></script>
     </body>
-
 </html>

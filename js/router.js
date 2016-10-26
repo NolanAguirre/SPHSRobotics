@@ -1,9 +1,11 @@
-angular.module('demo')
+angular.module('SPHSRobotics')
     .config(Router);
 
 Router.$inject = ['$routeProvider'];
 function Router($routeProvider) {
     $routeProvider
-        .when('/', {/*controller: 'Controller as vm',*/templateUrl:'templates/home.html'})
+        .when('/', {
+            templateUrl:'templates/home.html'
+        })
         .otherwise({redirectTo: '/'});
 }
